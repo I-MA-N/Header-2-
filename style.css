@@ -134,7 +134,7 @@ nav {
     color: rgba(172, 172, 172, .5);
     font-size: 90px;
     opacity: 0;
-    animation: to-right 2s ease-out 5s forwards,shadow 2s ease-out 7s forwards;
+    animation: to-right 2s ease-out 5s forwards;
 }
 @keyframes to-right {
     0% {opacity: 0; transform: translateX(-100%) skew(0deg);}
@@ -145,35 +145,12 @@ nav {
     color: rgba(172, 172, 172, .5);
     font-size: 90px;
     opacity: 0;
-    animation: fastest-text .2s ease-in 7s forwards,shadow 2s ease-out 7s forwards;
+    animation: fastest-text .2s ease-in 7s forwards;
 }
 @keyframes fastest-text {
     0% {opacity: 0; transform: translateX(-100%) skew(0deg);}
     80% {opacity: .8; transform: translateX(10%);}
     100% {opacity: 1; transform: translateX(0%) skew(-15deg);}
-}
-@keyframes shadow {
-    0% {
-        text-shadow: none;
-    }
-    25% {
-        text-shadow:    0 0 10px rgb(100, 2, 2);
-    }
-    50% {
-        text-shadow:    0 0 10px rgb(100, 2, 2),
-                        0 0 20px rgb(100, 2, 2);
-    }
-    75% {
-        text-shadow:    0 0 10px rgb(100, 2, 2),
-                        0 0 20px rgb(100, 2, 2),
-                        0 0 30px rgb(100, 2, 2);
-    }
-    100% {
-        text-shadow:    0 0 10px rgb(100, 2, 2),
-                        0 0 20px rgb(100, 2, 2),
-                        0 0 30px rgb(100, 2, 2),
-                        10px 2px 0 rgba(255,189,57,.6);
-    }
 }
 @media (max-width:768px) {
     .big-text h1,
