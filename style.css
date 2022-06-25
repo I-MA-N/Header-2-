@@ -172,7 +172,7 @@ nav {
         text-shadow:    0 0 10px rgb(100, 2, 2),
                         0 0 20px rgb(100, 2, 2),
                         0 0 30px rgb(100, 2, 2),
-                        10px 2px 0 #FFBD39;
+                        10px 2px 0 rgba(255,189,57,.6);
     }
 }
 @media (max-width:768px) {
